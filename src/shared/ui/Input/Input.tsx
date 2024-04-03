@@ -1,19 +1,33 @@
+import { ComponentProps } from 'react'
 import styles from './styles.module.css'
-import LabelIcon from '@/shared/lib/search.svg?react'
 
-type InputProps = { inputId: string; placeholder: string }
+type DefaultInputProps = ComponentProps<'input'>
+type NewProps = { labelContent?: JSX.Element }
+type InputProps = NewProps & Omit<DefaultInputProps, 'className'>
 
-export const Input = ({ inputId, placeholder }: InputProps) => {
+export const Input = ({
+  labelContent,
+  id,
+  ...defaultInputProps
+}: InputProps) => {
+  const inputClasses = labelContent
+    ? `${styles.input} ${styles['input-with-label']}`
+    : `${styles.input}`
+
   return (
     <div className={styles['input-box']}>
-      <label htmlFor={inputId} className={styles['input-label']}>
-        <LabelIcon />
-      </label>
+      {labelContent && (
+        <label htmlFor={id} className={styles['input-label']}>
+          {labelContent}
+        </label>
+      )}
+
       <input
-        id={inputId}
+        id={id}
+        name={id}
         type='text'
-        className={styles.input}
-        placeholder={placeholder}
+        className={inputClasses}
+        {...defaultInputProps}
       />
     </div>
   )

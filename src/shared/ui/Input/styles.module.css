@@ -5,11 +5,15 @@
 }
 
 .input {
-  padding: 12px 16px 12px 36px;
+  padding: 12px 16px;
   height: 40px;
   width: 40vw;
   border-radius: 6px;
   border: none;
+}
+
+.input-with-label {
+  padding-left: 36px;
 }
 
 .input:focus-visible {
@@ -20,4 +24,10 @@
   position: absolute;
   cursor: pointer;
   left: 14px;
+  top: 9px;
+}
+
+.input-label svg {
+  width: 14px;
+  height: 14px;
 }
