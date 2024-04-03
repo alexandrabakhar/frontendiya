@@ -11,13 +11,13 @@ export const Input = ({
   ...defaultInputProps
 }: InputProps) => {
   const inputClasses = labelContent
-    ? `${styles.input} ${styles['input-with-label']}`
+    ? `${styles.input} ${styles.paddingForLabel}`
     : `${styles.input}`
 
   return (
-    <div className={styles['input-box']}>
+    <div className={styles.container}>
       {labelContent && (
-        <label htmlFor={id} className={styles['input-label']}>
+        <label htmlFor={id} className={styles.label}>
           {labelContent}
         </label>
       )}

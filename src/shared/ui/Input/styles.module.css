@@ -1,4 +1,4 @@
-.input-box {
+.container {
   position: relative;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   border: none;
 }
 
-.input-with-label {
+.paddingForLabel {
   padding-left: 36px;
 }
 
@@ -20,14 +20,14 @@
   outline: none;
 }
 
-.input-label {
+.label {
   position: absolute;
   cursor: pointer;
   left: 14px;
   top: 9px;
 }
 
-.input-label svg {
+.label svg {
   width: 14px;
   height: 14px;
 }

@@ -1,10 +1,11 @@
-import { Header } from '@/widgets'
+import { EmptyBlock, Header } from '@/widgets'
 import styles from './styles.module.css'
 
 export const MainPage = () => {
   return (
-    <div className={styles.main}>
+    <main className={styles.main}>
       <Header />
-    </div>
+      <EmptyBlock contentType='initial' />
+    </main>
   )
 }
