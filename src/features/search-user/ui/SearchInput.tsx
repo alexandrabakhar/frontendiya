@@ -1,5 +1,12 @@
+import { SearchIcon } from '@/shared/lib'
 import { Input } from '@/shared/ui'
 
 export const SearchInput = () => {
-  return <Input inputId='search' placeholder='Enter GitHub username' />
+  return (
+    <Input
+      labelContent={<SearchIcon />}
+      id='search'
+      placeholder='Enter GitHub username'
+    />
+  )
 }
