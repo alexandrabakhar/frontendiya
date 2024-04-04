@@ -4,4 +4,6 @@
   height: 100vh;
   display: flex;
   background-color: var(--background-color);
+  gap: 84px;
+  padding: 100px 58px 28px 56px;
 }

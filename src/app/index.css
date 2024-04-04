@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+#root {
+  height: 100vh;
+}
+
 html {
   font-style: normal;
   font-weight: 400;

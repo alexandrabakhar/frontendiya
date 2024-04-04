@@ -1,15 +1,15 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, FC } from 'react'
 import styles from './styles.module.css'
 
 type DefaultInputProps = ComponentProps<'input'>
 type NewProps = { labelContent?: JSX.Element }
 type InputProps = NewProps & Omit<DefaultInputProps, 'className'>
 
-export const Input = ({
+export const Input: FC<InputProps> = ({
   labelContent,
   id,
   ...defaultInputProps
-}: InputProps) => {
+}) => {
   const inputClasses = labelContent
     ? `${styles.input} ${styles.paddingForLabel}`
     : `${styles.input}`

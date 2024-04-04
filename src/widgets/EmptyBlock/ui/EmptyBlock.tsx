@@ -1,13 +1,14 @@
 import { contentTypeMapper } from '@/widgets/EmptyBlock/lib/contentTypeMapper'
-import { ContentType } from '@/widgets/EmptyBlock/model/types'
+import { EmptyContentType } from '@/widgets/EmptyBlock/model/types'
 import { Typography } from '@/shared/ui'
 
 import styles from './styles.module.css'
+import { FC } from 'react'
 
 type EmptyBlockProps = {
-  contentType: ContentType
+  contentType: EmptyContentType
 }
-export const EmptyBlock = ({ contentType }: EmptyBlockProps) => {
+export const EmptyBlock: FC<EmptyBlockProps> = ({ contentType }) => {
   const { icon, title } = contentTypeMapper[contentType]
   return (
     <main className={styles.container}>
