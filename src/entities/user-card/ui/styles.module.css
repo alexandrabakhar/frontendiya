@@ -1,0 +1,29 @@
+.container {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.avatarBox {
+  width: 20.5vw;
+  height: 20.5vw;
+}
+
+.infoContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.infoBox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

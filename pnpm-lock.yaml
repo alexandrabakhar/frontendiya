@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  classix:
+    specifier: ^2.1.36
+    version: 2.1.36
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1478,6 +1481,10 @@ packages:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
+
+  /classix@2.1.36:
+    resolution: {integrity: sha512-1glwI9Ho7s/Z5vqCNLj3eYU+17A9KHjLREcmzJUmZS+GnXBgS1/or5fzqhB5b59jsPxazONrajM5d9hgJgnnlA==}
+    dev: false
 
   /cli-cursor@4.0.0:
     resolution: {integrity: sha512-VGtlMu3x/4DOtIUwEkRezxUZ2lBacNJCHash0N0WeZDBS+7Ux1dm3XWAgWYxLJFMMdOeXMHXorshEFhbMSGelg==}

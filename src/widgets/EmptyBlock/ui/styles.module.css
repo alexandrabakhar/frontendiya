@@ -13,9 +13,6 @@
   height: 40px;
 }
 
-.title {
-  font-size: 22px;
-  text-align: center;
-  color: #808080;
+.titleBox {
   width: 200px;
 }
