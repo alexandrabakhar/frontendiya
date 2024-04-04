@@ -1,12 +1,12 @@
-import { Content, Header } from '@/widgets'
+import { Repositories } from '@/widgets/Repositories'
 import styles from './styles.module.css'
+import { Card } from '@/entities'
 
 export const MainPage = () => {
   return (
-    <div className={styles.main}>
-      <Header />
-      {/* <EmptyBlock contentType='initial' /> */}
-      <Content />
-    </div>
+    <main className={styles.main}>
+      <Card />
+      <Repositories />
+    </main>
   )
 }

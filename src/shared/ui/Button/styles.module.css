@@ -1,0 +1,43 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.default {
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+.default:hover {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.selectedBtn {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.svgBox {
+  width: 24px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.svgBox:disabled {
+  cursor: not-allowed;
+}
+
+.svgBox svg {
+  fill: var(--secondary-color);
+}
+
+.svgBox:not(.svgBox:disabled):hover svg {
+  fill: var(--accent-color);
+}

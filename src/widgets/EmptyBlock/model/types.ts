@@ -1,7 +1,7 @@
-export type ContentType = 'initial' | 'user' | 'repository'
+export type EmptyContentType = 'initial' | 'user' | 'repository'
 
 export type ContentTypeMapper = Record<
-  ContentType,
+  EmptyContentType,
   {
     title: string
     icon: JSX.Element

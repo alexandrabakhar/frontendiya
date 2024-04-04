@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, FC } from 'react'
 import styles from './styles.module.css'
 import { cx } from 'classix'
 
@@ -7,12 +7,12 @@ type LinkOwnProps = {
 }
 type LinkProps = LinkOwnProps & ComponentProps<'a'>
 
-export const Link = ({
+export const Link: FC<LinkProps> = ({
   size,
   children,
   className,
   ...otherProps
-}: LinkProps) => {
+}) => {
   const classNames = cx(styles[size], styles.color, className)
   return (
     <a {...otherProps} className={classNames}>
