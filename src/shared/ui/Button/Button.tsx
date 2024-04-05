@@ -1,6 +1,6 @@
+import cx from 'classix'
 import { ComponentProps, FC } from 'react'
 import styles from './styles.module.css'
-import cx from 'classix'
 type ButtonOwnProps = {
   selected?: boolean
   btnType?: 'svgBox' | 'default'

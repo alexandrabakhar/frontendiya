@@ -1,12 +1,15 @@
-import { EmptyPage, MainPage } from '@/pages'
-import { Header } from '@/widgets'
+import { EmptyPage } from '@/pages/EmptyPage'
+import { MainPage } from '@/pages/MainPage'
+import { Header } from '@/widgets/Header'
+import { useUserContext } from '@/entities/user'
 
 export const MainLayout = () => {
-  const isUser = true
+  const { user, errorStatus } = useUserContext()
+
   return (
     <>
       <Header />
-      {isUser ? <MainPage /> : <EmptyPage contentType='initial' />}
+      {user ? <MainPage /> : <EmptyPage error={errorStatus} />}
     </>
   )
 }

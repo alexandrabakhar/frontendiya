@@ -1,12 +1,20 @@
+import { EmptyBlock } from '@/widgets/EmptyBlock'
 import { Repositories } from '@/widgets/Repositories'
+import { Card, useUserContext } from '@/entities/user'
 import styles from './styles.module.css'
-import { Card } from '@/entities'
 
 export const MainPage = () => {
+  const { user } = useUserContext()
+  const isRepositories = user?.repos_count === 0
+
   return (
     <main className={styles.main}>
       <Card />
-      <Repositories />
+      {isRepositories ? (
+        <EmptyBlock contentType='repository' />
+      ) : (
+        <Repositories />
+      )}
     </main>
   )
 }
