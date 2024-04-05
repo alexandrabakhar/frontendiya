@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-top: auto;
   color: var(--secondary-text-color);
-  width: 320px;
+  gap: 16px;
 }
 
 .bodyBox {

@@ -1,4 +1,4 @@
-export type EmptyContentType = 'initial' | 'user' | 'repository'
+export type EmptyContentType = 'initial' | '404' | 'defaultError' | 'repository'
 
 export type ContentTypeMapper = Record<
   EmptyContentType,

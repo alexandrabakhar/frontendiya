@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
     'prettier',
+    'plugin:@conarti/feature-sliced/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -23,11 +24,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'no-console': 'warn',
-    'no-restricted-imports': [
-      'error',
-      {
-        patterns: ['../'],
-      },
-    ],
+    'no-duplicate-imports': 'error',
   },
 }

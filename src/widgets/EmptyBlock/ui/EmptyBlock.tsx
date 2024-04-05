@@ -1,9 +1,8 @@
-import { contentTypeMapper } from '@/widgets/EmptyBlock/lib/contentTypeMapper'
-import { EmptyContentType } from '@/widgets/EmptyBlock/model/types'
-import { Typography } from '@/shared/ui'
-
-import styles from './styles.module.css'
 import { FC } from 'react'
+import { Typography } from '@/shared/ui'
+import { contentTypeMapper } from '../lib/contentTypeMapper'
+import { EmptyContentType } from '../model/types'
+import styles from './styles.module.css'
 
 type EmptyBlockProps = {
   contentType: EmptyContentType

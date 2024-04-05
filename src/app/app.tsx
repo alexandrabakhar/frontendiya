@@ -1,11 +1,10 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import '@/app/index.css'
+import './app.css'
 import { MainLayout } from './layouts/MainLayout'
+import { PROVIDERS, ProviderComposer } from './providers'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+  <ProviderComposer providers={PROVIDERS}>
     <MainLayout />
-  </React.StrictMode>,
+  </ProviderComposer>,
 )
